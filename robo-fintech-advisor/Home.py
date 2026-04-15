@@ -51,7 +51,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown('<div class="rf-click-card-wrap">', unsafe_allow_html=True)
     if st.button(
-        "**FinTech Learning Chat**\n术语教学 + AI 聊天解释 + 双语学习",
+        "**FinTech Learning Chat**\n\n*术语教学 + AI 聊天解释\n双语学习*",
         key="card_learning",
         width="stretch",
     ):
@@ -61,7 +61,7 @@ with col1:
 with col2:
     st.markdown('<div class="rf-click-card-wrap">', unsafe_allow_html=True)
     if st.button(
-        "**Simulated Trading**\n虚拟交易、手续费、风险指标面板",
+        "**Simulated Trading**\n\n*虚拟交易、手续费、风险指标面板*",
         key="card_sim",
         width="stretch",
     ):
@@ -72,7 +72,7 @@ st.write("")
 
 st.markdown('<div class="rf-click-card-wrap">', unsafe_allow_html=True)
 if st.button(
-    "**Technical Analysis**\nK 线、成交量、均线与交易信号",
+    "**Technical Analysis**\n\n*K 线、成交量、均线与交易信号*",
     key="card_analysis",
     width="stretch",
 ):
