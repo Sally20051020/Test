@@ -205,9 +205,9 @@ h1, h2, h3 {
 
 .rf-click-card-wrap .stButton > button strong {
   display: block !important;
-  font-size: 1.45rem !important;
-  line-height: 1.25 !important;
-  margin-bottom: 0.7rem !important;
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.75rem !important;
   font-weight: 900 !important;
 }
 
