@@ -21,143 +21,64 @@ user = current_user()
 
 st.markdown(
     """
-    <div class="rf-hero">
-      <div class="rf-badge">AI-Powered Learning for Gen-Z Investors</div>
-      <h1>Master Your Money<br>Before You Invest.</h1>
-      <p>
-        Learn stock market basics, practice trading with virtual cash,
-        and explore technical signals in one place.
-        No real risk, all real learning.
+    <div class="rf-card" style="padding: 1.8rem 1.8rem 1.4rem 1.8rem; margin-bottom: 1rem;">
+      <h1 style="margin:0; font-size: 3rem; font-weight: 900; letter-spacing: -0.03em;">Robo-FinTech Advisor</h1>
+      <p style="margin-top: 0.7rem; color: var(--muted); font-size: 1.05rem; line-height: 1.7;">
+        AI-powered FinTech Learning, Trading Simulation, and Analysis Workspace
       </p>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-c1, c2, c3 = st.columns(3)
-with c1:
-    st.markdown(
-        """
-        <div class="rf-stat">
-          <div class="rf-stat-label">Learning Mode</div>
-          <div class="rf-stat-value">Glossary + QA</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-with c2:
-    st.markdown(
-        """
-        <div class="rf-stat">
-          <div class="rf-stat-label">Simulation</div>
-          <div class="rf-stat-value">Virtual Trading</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-with c3:
-    st.markdown(
-        """
-        <div class="rf-stat">
-          <div class="rf-stat-label">Analysis</div>
-          <div class="rf-stat-value">Candles + MA</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-st.write("")
-
 if user:
     st.markdown(
-        f"<div class='rf-note'>Welcome back, <b>{user}</b>. Your Robo-Fin workspace is ready.</div>",
+        f"<div class='rf-note'>当前登录用户：<b>{user}</b></div>",
         unsafe_allow_html=True,
     )
 else:
     st.markdown(
-        "<div class='rf-note'>You are not logged in yet. Create an account in the Profile page to unlock the simulator and analysis tools.</div>",
+        "<div class='rf-note'>未登录。请先进入左侧 Profile 页面创建账号或登录。</div>",
         unsafe_allow_html=True,
     )
 
 st.write("")
-st.markdown("<div class='rf-section-title'>Explore Core Features</div>", unsafe_allow_html=True)
-st.markdown("<div class='rf-section-subtitle'>Start from the area you want to improve first.</div>", unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+c1, c2 = st.columns(2)
 
-with col1:
+with c1:
     st.markdown(
         """
-        <div class="rf-card">
-          <h3>📚 Learn with Robo-Fin</h3>
-          <p>
-            Search FinTech terms, review bilingual explanations,
-            and switch to guided Q&A for beginner-friendly learning.
-          </p>
+        <div class="rf-card" style="min-height: 150px;">
+          <h3>FinTech Learning Chat</h3>
+          <p>术语教学 + AI 聊天解释 + 双语学习</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    st.page_link("pages/1_Terminology_QA.py", label="Open Learning Chat", icon="✨")
+    st.page_link("pages/1_Terminology_QA.py", label="进入 Learning Chat", icon="📚")
 
-with col2:
+with c2:
     st.markdown(
         """
-        <div class="rf-card">
-          <h3>💹 Practice in the Simulator</h3>
-          <p>
-            Trade with virtual cash, observe fees, track holdings,
-            and build confidence before touching real money.
-          </p>
+        <div class="rf-card" style="min-height: 150px;">
+          <h3>Simulated Trading</h3>
+          <p>虚拟交易、手续费、风险指标面板</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    st.page_link("pages/2_Simulated_Trading.py", label="Open Simulator", icon="🚀")
+    st.page_link("pages/2_Simulated_Trading.py", label="进入 Simulated Trading", icon="💹")
 
 st.write("")
-col3, col4 = st.columns([2, 1])
 
-with col3:
-    st.markdown(
-        """
-        <div class="rf-card">
-          <h3>📉 Technical Analysis Workspace</h3>
-          <p>
-            View candlestick charts, moving averages, volume,
-            and simple signal logic in a more visual dashboard flow.
-          </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.page_link("pages/3_Technical_Analysis.py", label="Open Analysis", icon="📊")
-
-with col4:
-    st.markdown(
-        """
-        <div class="rf-card">
-          <h3>👤 Profile</h3>
-          <p>
-            Sign up, log in, and manage your account before using all modules.
-          </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.page_link("pages/0_Profile.py", label="Open Profile", icon="🔐")
-
-st.write("")
-st.markdown("<div class='rf-section-title'>Why this version feels stronger</div>", unsafe_allow_html=True)
 st.markdown(
     """
-    <div class="rf-card">
-      <p>
-        This homepage is rebuilt to match your TypeScript draft more closely:
-        stronger hero section, cleaner dashboard hierarchy, larger rounded cards,
-        and clearer entry points for Learn, Simulate, and Analysis.
-      </p>
+    <div class="rf-card" style="min-height: 150px;">
+      <h3>Technical Analysis</h3>
+      <p>K 线、成交量、均线与交易信号</p>
     </div>
     """,
     unsafe_allow_html=True,
 )
+st.page_link("pages/3_Technical_Analysis.py", label="进入 Technical Analysis", icon="📉")
