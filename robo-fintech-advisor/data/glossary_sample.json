@@ -1,0 +1,14 @@
+[
+  {"en": "merger", "zh": "合并", "note": "两家公司合并为一家。"},
+  {"en": "acquisition", "zh": "收购", "note": "一方取得另一方控制权。"},
+  {"en": "hostile takeover", "zh": "恶意收购", "note": "未经目标公司董事会同意的收购尝试。"},
+  {"en": "leveraged buyout", "zh": "杠杆收购", "note": "大量举债融资进行的收购。"},
+  {"en": "IPO", "zh": "首次公开募股", "note": "initial public offering，公司首次向公众发行股票。"},
+  {"en": "blue chips", "zh": "蓝筹股", "note": "规模大、业绩稳的知名公司股票。"},
+  {"en": "P/E ratio", "zh": "市盈率", "note": "股价相对每股收益的倍数，常见估值指标。"},
+  {"en": "dividend", "zh": "股息", "note": "公司向股东分配的利润。"},
+  {"en": "convertible bonds", "zh": "可转换债券", "note": "可按约定条件转为公司股票的债券。"},
+  {"en": "private equity", "zh": "私募股本", "note": "非公开市场股权投资基金常见投资形式。"},
+  {"en": "beta", "zh": "市场风险指数", "note": "衡量股票相对整体市场波动程度的指标。"},
+  {"en": "position", "zh": "头寸", "note": "持有的合约或证券数量与方向。"}
+]
