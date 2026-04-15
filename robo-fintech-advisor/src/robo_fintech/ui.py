@@ -173,18 +173,18 @@ h1, h2, h3 {
 }
 
 .rf-click-card-wrap {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
 }
 
 .rf-click-card-wrap .stButton > button {
   width: 100% !important;
-  min-height: 150px !important;
-  border-radius: 20px !important;
-  border: 1px solid var(--border) !important;
-  background: rgba(255,255,255,0.96) !important;
-  color: var(--text) !important;
-  box-shadow: var(--shadow) !important;
-  padding: 1.25rem 1.2rem !important;
+  min-height: 170px !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(37, 99, 235, 0.12) !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: white !important;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.20) !important;
+  padding: 1.35rem 1.3rem !important;
   text-align: left !important;
   justify-content: flex-start !important;
   align-items: flex-start !important;
@@ -194,22 +194,31 @@ h1, h2, h3 {
 }
 
 .rf-click-card-wrap .stButton > button:hover {
-  border-color: rgba(37, 99, 235, 0.22) !important;
-  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.09) !important;
+  filter: brightness(1.02);
   transform: translateY(-2px);
 }
 
 .rf-click-card-wrap .stButton > button p {
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
+  margin: 0 !important;
+  line-height: 1.7 !important;
 }
 
 .rf-click-card-wrap .stButton > button strong {
   display: block !important;
-  font-size: 1.08rem !important;
-  margin-bottom: 0.4rem !important;
+  font-size: 1.45rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.7rem !important;
+  font-weight: 900 !important;
 }
 
+.rf-click-card-wrap .stButton > button em {
+  display: block !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: rgba(255,255,255,0.92) !important;
+}
 div.stButton > button,
 div.stDownloadButton > button,
 button[kind="primary"] {
